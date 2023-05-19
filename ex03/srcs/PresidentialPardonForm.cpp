@@ -6,7 +6,7 @@
 /*   By: sleon <sleon@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/19 13:46:55 by sleon             #+#    #+#             */
-/*   Updated: 2023/05/19 14:53:54 by sleon            ###   ########.fr       */
+/*   Updated: 2023/05/19 14:59:43 by sleon            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,5 +44,6 @@ void	PresidentialPardonForm::execute(Bureaucrat &executor){
 		std::cout<<e.what()<<std::endl;
 		return ;
 	}
-		std::cout<< _target<<" has been paerdonned by Zaphod Beeblebrox."<<std::endl<<std::endl;
+	std::cout<<std::endl;
+	std::cout<< _target<<" has been paerdonned by Zaphod Beeblebrox."<<std::endl<<std::endl;
 }

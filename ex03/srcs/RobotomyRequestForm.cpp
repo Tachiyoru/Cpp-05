@@ -6,7 +6,7 @@
 /*   By: sleon <sleon@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/19 12:56:13 by sleon             #+#    #+#             */
-/*   Updated: 2023/05/19 14:56:55 by sleon            ###   ########.fr       */
+/*   Updated: 2023/05/19 14:58:58 by sleon            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,6 +45,7 @@ void	RobotomyRequestForm::execute(Bureaucrat &executor){
 		std::cout<<e.what()<<std::endl;
 		return ;
 	}
+	std::cout<<std::endl;
 	std::cout<<"brrrrrr BRRRRRRR BRRRRRRRRRRR"<<std::endl;
 	srand(time(NULL));
 	int	random = rand() % 2;

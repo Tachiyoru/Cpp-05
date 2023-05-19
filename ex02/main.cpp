@@ -6,7 +6,7 @@
 /*   By: sleon <sleon@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/16 17:47:16 by sleon             #+#    #+#             */
-/*   Updated: 2023/05/19 13:54:02 by sleon            ###   ########.fr       */
+/*   Updated: 2023/05/19 14:56:03 by sleon            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,8 @@ int	main()
 
 		std::cout  << B1 << std::endl;
 		std::cout << FormPresident << std::endl;
-
+		B1.SignForm(FormPresident);
+		std::cout  << B1 << std::endl;
 		FormPresident.execute(B1);
 	}
 
@@ -34,7 +35,8 @@ int	main()
 
 		std::cout  << B1 << std::endl;
 		std::cout << RobotomyRq << std::endl;
-
+		B1.SignForm(RobotomyRq);
+		std::cout  << B1 << std::endl;
 		RobotomyRq.execute(B1);
 	}
 
@@ -43,7 +45,8 @@ int	main()
 
 		std::cout  << B1 << std::endl;
 		std::cout << Shrub << std::endl;
-
+		B1.SignForm(Shrub);
+		std::cout  << B1 << std::endl;
 		Shrub.execute(B1);
 	}
 

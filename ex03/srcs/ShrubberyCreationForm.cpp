@@ -6,7 +6,7 @@
 /*   By: sleon <sleon@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/19 11:26:29 by sleon             #+#    #+#             */
-/*   Updated: 2023/05/19 14:54:03 by sleon            ###   ########.fr       */
+/*   Updated: 2023/05/19 14:59:37 by sleon            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,6 +44,7 @@ void	ShrubberyCreationForm::execute(Bureaucrat &executor){
 		std::cout<<e.what()<<std::endl;
 		return ;
 	}
+	std::cout<<std::endl;
 	std::cout<<"Creating "<<_target<<"_shrubbery ..."<<std::endl;
 
 	std::string	outName;

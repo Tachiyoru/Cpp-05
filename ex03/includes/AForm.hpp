@@ -6,7 +6,7 @@
 /*   By: sleon <sleon@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/16 14:25:42 by sleon             #+#    #+#             */
-/*   Updated: 2023/05/19 14:56:30 by sleon            ###   ########.fr       */
+/*   Updated: 2023/05/19 14:56:20 by sleon            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ class AForm
 	AForm();
 	AForm(std::string name, int toSign, int toExec);
 	AForm(AForm &toCopy);
-	~AForm();
+	virtual ~AForm();
 
 	AForm	&operator=(AForm &toCopy);
 
@@ -49,7 +49,7 @@ class AForm
 		{
 			public:
 			virtual const char* what() const throw(){
-				return ("The grade set is too high");
+				return ("The grade set is too high\n");
 			}
 		};
 
@@ -57,7 +57,7 @@ class AForm
 		{
 			public:
 			virtual const char* what() const throw(){
-				return ("The grade set is too low");
+				return ("The grade set is too low\n");
 			}
 		};
 
@@ -65,7 +65,7 @@ class AForm
 		{
 			public:
 			virtual const char* what() const throw(){
-				return ("The Aform has already been signed");
+				return ("The form has already been signed\n");
 			}
 		};
 
